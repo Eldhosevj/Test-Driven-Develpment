@@ -78,7 +78,7 @@ describe("Sign UP", () => {
       let requestBody;
       const server = setupServer(
         rest.post("/api/1.0/users", (req, res, ctx) => {
-          requestBody = req.bodyUsed;
+          requestBody = req.body;
       
           return res(ctx.status(200));
         })

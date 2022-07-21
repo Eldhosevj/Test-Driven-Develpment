@@ -24,14 +24,14 @@ const submit=(event)=>{
   event.preventDefault()
  // setButtonDisabledButton(true)
  const body=value
-  //axios.post("/api/1.0/users",body)
-fetch("/api/1.0/users",{
-  method:"POST",
-  headers:{
-    "Content-Type":"application/json",
-  },
-  body:JSON.stringify(body)
-})
+  axios.post("/api/1.0/users",body)
+// fetch("/api/1.0/users",{
+//   method:"POST",
+//   headers:{
+//     "Content-Type":"application/json",
+//   },
+//   body:JSON.stringify(body)
+// })
 }
   return (
     <div style={{width:"10%"}}>
