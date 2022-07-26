@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import SignUpPage from './pages/SignUpPage';
-
+import HomePage  from './pages/HomePage';
 function App() {
   return (
-    <SignUpPage/>
+    <>
+    <HomePage/>
+    {window.location.pathname==="/signUp"&&<SignUpPage/>}
+    </>
+    
   );
 }
 

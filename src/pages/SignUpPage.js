@@ -38,7 +38,7 @@ const [error,setError]=useState({})
     // })
   };
   return (
-    <div style={{ width: "10%" }}>
+    <div style={{ width: "10%" }} data-testid="signup-page">
       <h1>Sign Up</h1>
       {apiCallSuccesfull==false &&
       <form autoComplete="on" data-testid="form-sign-up">
